@@ -1,18 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Email Spam Classifier</title>
+    <meta charset="UTF-8">
+    <title>🚀 Amazing Email Spam Classifier</title>
     <link rel="stylesheet" href="/static/style.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <h1>🚀 Amazing Email Spam Classifier 🚀</h1>
         <form method="post">
             <textarea name="email" placeholder="Paste email here..." required></textarea>
+            <br>
             <button type="submit">Check for Spam</button>
         </form>
         {% if prediction %}
-            <div class="result">{{ prediction }}</div>
+            <div class="result">
+                {% if prediction == 'Spam' %}
+                    <p style="color: #ff4b2b; font-weight:bold;">🚨 This is SPAM!</p>
+                {% else %}
+                    <p style="color: #4caf50; font-weight:bold;">✅ This is NOT Spam!</p>
+                {% endif %}
+            </div>
         {% endif %}
     </div>
 </body>
