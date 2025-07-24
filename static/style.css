@@ -1,0 +1,6 @@
+body { background: linear-gradient(120deg, #f6d365 0%, #fda085 100%); font-family: 'Segoe UI', sans-serif; }
+.container { max-width: 500px; margin: 50px auto; background: white; border-radius: 16px; padding: 30px; box-shadow: 0 6px 24px rgba(0,0,0,0.1); }
+h1 { color: #fe6b8b; }
+textarea { width: 100%; border-radius: 8px; padding: 12px; margin-top: 16px; }
+button { background: #fe6b8b; color: white; border: none; padding: 10px 24px; border-radius: 4px; font-size: 16px; cursor: pointer; margin-top: 12px; }
+.result { margin-top: 24px; font-size: 25px; font-weight: bold; color: #3a3a3a; }
